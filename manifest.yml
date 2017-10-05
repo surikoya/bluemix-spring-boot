@@ -1,0 +1,12 @@
+---
+applications:
+ - name: GettingStartedJava
+   host: GetStartedHost
+   buildpack: liberty-for-java
+   random-route: true
+   path: target/helloworld-0.0.1-SNAPSHOT.war
+   memory: 256M
+   instances: 1
+env:
+  DT_APPLICATION_ID: GetStartedEnv
+  APPLICATION_ID: GettingStatedAppId
