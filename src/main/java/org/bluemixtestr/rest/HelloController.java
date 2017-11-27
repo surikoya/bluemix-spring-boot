@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
 	@RequestMapping(value = "/ping", method = RequestMethod.GET)
-	public String ping() {
+	public String ping() throws Exception{
+                Thread.sleep(4000L);
 		return "pong";
 	}
 

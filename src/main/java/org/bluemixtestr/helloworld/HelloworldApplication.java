@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan({"org.bluemixtestr.helloworld"})
+@ComponentScan({"org.bluemixtestr"})
 @EnableAutoConfiguration
 public class HelloworldApplication {
 

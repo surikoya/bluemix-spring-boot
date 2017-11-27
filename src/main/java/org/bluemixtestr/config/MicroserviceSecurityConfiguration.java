@@ -1,4 +1,4 @@
-package org.bluemixtestr.helloworld.config;
+package org.bluemixtestr.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
