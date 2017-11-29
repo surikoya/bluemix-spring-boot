@@ -6,7 +6,7 @@ applications:
    random-route: true
    path: target/helloworld-0.0.1-SNAPSHOT.war
    memory: 256M
-   instances: 1
+   instances: 3
 env:
   DT_APPLICATION_ID: GetStartedEnv
   APPLICATION_ID: GettingStatedAppId

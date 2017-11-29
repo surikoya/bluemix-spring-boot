@@ -9,10 +9,21 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
+//	@Autowired private BuildProperties buildProperties;
 	@RequestMapping(value = "/ping", method = RequestMethod.GET)
-	public String ping() throws Exception{
-                Thread.sleep(4000L);
+	public String ping(){
 		return "pong";
 	}
 
+	@RequestMapping(value = "/health", method = RequestMethod.GET)
+	public String health(){
+		return "UP for test";
+	}
+	
+	
+	@RequestMapping(value = "/info", method = RequestMethod.GET)
+	public String info() throws Exception{
+		return "pong";
+	}
+	
 }

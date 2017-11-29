@@ -23,6 +23,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<revision.version>2.1.13</revision.version>
 	</properties>
 
 	<dependencies>
@@ -54,6 +55,23 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>pl.project13.maven</groupId>
+				<artifactId>git-commit-id-plugin</artifactId>
+				<version>${revision.version}</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>revision</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<!--Configure the location of .git directory -->
+					<dotGitDirectory>${project.basedir}/.git</dotGitDirectory>
+					<verbose>true</verbose>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
